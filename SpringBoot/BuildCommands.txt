@@ -1,0 +1,7 @@
+docker build --tag=message-server:latest .
+docker run -p8887:8888 message-server:latest
+
+-- if in detach mode:
+$> docker inspect message-server
+$> docker stop message-server
+$> docker rm message-server
